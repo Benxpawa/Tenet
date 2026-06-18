@@ -63,7 +63,21 @@ public class MohistMCStart {
         }
         if (MohistConfigUtil.INSTALLATIONFINISHED() && MohistConfigUtil.aBoolean("mohist.show_logo", true)) {
             System.out.printf("%n%s%n%s - %s, Java(%s) %s PID: %s%n",
-                    Logo.asMohist(),
+                    String huufonLogo = """
+                      _    _ _    _ _    _ ______ ____  _   _ 
+                    | |  | | |  | | |  | |  ____/ __ \| \ | |
+                    | |__| | |  | | |  | | |__ | |  | |  \| |
+                    |  __  | |  | | |  | |  __|| |  | | . ` |
+                    | |  | | |__| | |__| | |   | |__| | |\  |
+                    |_|  |_|\____/ \____/|_|    \____/|_| \_|
+                                          
+                                           
+                            """;
+
+                    System.out.printf("%n%s%n%s - %s, Java(%s) %s PID: %s%n",
+                            huufonLogo,
+                            ...
+                    );
                     i18n.as("mohist.launch.welcomemessage"),
                     getVersion(),
                     System.getProperty("java.class.version"),
@@ -73,9 +87,9 @@ public class MohistMCStart {
             if (i18n.isCN()) {
                 System.out.println("+------------------------------------------------------+");
                 System.out.println("|                                                      |");
-                System.out.println("| 官方交流QQ群: 570870451                              |");
-                System.out.println("| 官网(中国): https://www.mohistmc.cn/                 |");
-                System.out.println("| 爱发电: https://ifdian.net/a/MohistMC                |");
+                System.out.println("| 基于https://github.com/Teneted/Tenet                       |");
+                System.out.println("| HUUFON Team                 |");
+                System.out.println("| 构建：2026.6.18                |");
                 System.out.println("|                                                      |");
                 System.out.println("+------------------------------------------------------+");
             }
